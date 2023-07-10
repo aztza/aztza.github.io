@@ -22,6 +22,10 @@
     }
     .container{
         align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     span{
         color: white;
@@ -31,16 +35,58 @@
     .aboutMe,.myEducation {
         background-color: black;
         width: 400px;
-        position: relative;
-        left: 35%;
-        margin-left: -50px;
         text-align: center;
         padding: 50px;
     }
-
     .myEducation{
         width: 800px;
-        left: 20%;
+    }
+    @media(max-width: 1000px) {
+        h1,h2{
+            font-size: 20px;
+        }
+        .aboutMe{
+            width: 300px;
+        }
+        .myEducation{
+        width: 600px;
+    }
+    }
+    @media(max-width: 830px) {
+        h1,h2{
+            font-size: 20px;
+        }
+        .aboutMe{
+            width: 200px;
+            font-size: 10px;
+        }
+        .myEducation{
+            width: 500px;
+            font-size: 10px;
+    }
+    }
+    @media(max-width: 700px) {
+        h1,h2{
+            font-size: 15px;
+        }
+        .aboutMe{
+            width: unset;
+            font-size: 10px;
+        }
+        .myEducation{
+            width: unset;
+            font-size: 10px;
+    }
+    }
+    @media(max-width: 455px) {
+        .aboutMe, .myEducation{
+            padding: 30px;
+        }
+    }
+    @media(max-width: 300px) {
+        .aboutMe, .myEducation{
+            padding: 10px;
+        }
     }
 
 </style>

@@ -33,7 +33,6 @@
             padding: 50px;
             text-shadow: -3px 3px purple;
             box-shadow:  inset 5px 5px 10px #000000, inset -5px -5px 30px purple; 
-
         }
 
         .list a{
@@ -46,7 +45,6 @@
             padding: 10px;
             margin: 10px 200px;
             width: 200px;
-
         }
 
         .list{
@@ -56,6 +54,89 @@
         .list a:hover{
             background-color:  rgb(196, 202, 206);
         }
+
+        @media(max-width: 1160px){
+                .greet {
+                    font-size: 1.5rem;
+                    width: 400px;
+                }
+        }
+        @media(max-width: 1030px){
+                .greet {
+                    height: 250px;
+                    font-size: 1.5rem;
+                }
+                .list a{ 
+                    width :150px;
+                }
+        }
+        @media(max-width: 965px){
+            .greet {
+                    height: 200px;
+                    width:300px;
+                    font-size: 1rem;
+                    text-align: center;
+                }
+            .list a{ 
+                width :120px;
+                font-size: 15px;
+
+            }
+        }
+        @media(max-width: 850px){
+            .list a{
+            margin: 0px 1px;
+            width:75px;
+           }
+           .list{
+            display: flex;
+            margin-bottom: 10px;
+           }
+           section {
+            flex-direction: column;
+            justify-content: center;
+           }
+           .list{
+            justify-content: center;
+            align-items: center;
+           }
+        }
+        @media(max-width: 500px){
+            .greet{
+                width: 200px;
+                height:150px;
+            }
+            .list a{
+                width: 50px;
+                font-size: 10px;
+                text-align: center;
+            }
+        }
+        @media(max-width: 350px){
+            .greet{
+                width: 150px;
+                height:100px;
+                font-size: 13px;
+            }
+            .list a{
+                width: 40px;
+                font-size: 10px;
+                text-align: center;
+            }
+        }
+        @media(max-width: 290px){
+            .greet{
+                width: 100px;
+                height:70px;
+                font-size: 9px;
+            }
+            .list a{
+                width: 25px;
+                font-size: 7px;
+                text-align: center;
+            }
+        }
+        
 
     </style>
 </head>
