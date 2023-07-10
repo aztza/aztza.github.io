@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+        body{
+            background: rgb(2,0,36);
+            background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(50,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        }
+
+        h1{
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            font-family: 'Russo One', sans-serif;
+            font-size: 2rem;
+            color: white;
+            text-shadow: -3px 3px purple;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            justify-content: center;
+        }
+        .loader{
+            width: 300px;
+            background-color: rgb(179, 176, 176);
+        }
+
+        label{
+            font-family: 'Russo One', sans-serif;
+            color: white;
+        }
+
+        .jsskill,.phpskill,.jqueryskill,.htmlskill,.cssskill,.laravelskill,.vueskill{
+            width: 75%;
+            background-color: #196FBC;
+            font-family: 'Russo One', sans-serif;
+            color: white;
+        }
+
+        .htmlskill,.cssskill{
+            width: 80%;
+        }
+        .laravelskill{
+            width: 85%;
+        }
+        .vueskill{
+            width: 70%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Programming Languages</h1>
+        <section class="languages">
+            <div>
+                <label for="html">HTML</label>
+                <div id="html" class="loader">
+                    <div class="htmlskill">80%</div>
+                </div>
+            </div>
+            <div>
+                <label for="CSS">CSS</label>
+                <div id="CSS" class="loader">
+                    <div class="cssskill">80%</div>
+                </div>
+            </div>
+            <div>
+                <label for="JavaScript">JavaScript</label>
+                <div id="JavaScript" class="loader">
+                    <div class="jsskill">75%</div>
+                </div>
+            </div>
+            <div>
+                <label for="PHP">PHP</label>
+                <div id="PHP" class="loader">
+                    <div class="phpskill">75%</div>
+                </div>
+            </div>
+        </section>
+        <h1>Frameworks</h1>
+            <section class="framework">
+                <div>
+                    <label for="Jquery">Jquery</label>
+                    <div id="Jquery" class="loader">
+                        <div class="jqueryskill">75%</div>
+                    </div>
+                </div>
+                <div>
+                    <label for="Laravel">Laravel</label>
+                    <div id="Laravel" class="loader">
+                        <div class="laravelskill">85%</div>
+                    </div>
+                </div>
+                <div>
+                    <label for="Vue">Vue</label>
+                    <div id="Vue" class="loader">
+                        <div class="vueskill">70%</div>
+                    </div>
+                </div>
+            </section>
+    </div>
+</body>
+</html>

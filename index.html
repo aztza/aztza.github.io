@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My PortFolio</title> 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+        body{
+            background: rgb(2,0,36);
+            background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(50,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        }
+
+        section {
+            height : 100vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .greet{
+            cursor: pointer;
+            display: flex;
+            justify-content: end;
+            text-align: end;
+            align-items: center;
+            font-family: 'Russo One', sans-serif;
+            font-size: 2rem;
+            color: white;
+            background-color: black;
+            padding: 50px;
+            text-shadow: -3px 3px purple;
+            box-shadow:  inset 5px 5px 10px #000000, inset -5px -5px 30px purple; 
+
+        }
+
+        .list a{
+            display: block;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            font-size: 20px;
+            background-color: rgb(196, 202, 206,  0.7);
+            padding: 10px;
+            margin: 10px 200px;
+            width: 200px;
+
+        }
+
+        .list{
+            align-items: center;
+        }
+
+        .list a:hover{
+            background-color:  rgb(196, 202, 206);
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="list">
+            <a href="about.html">About</i></a>
+            <a href="skill.html">Skills</a>
+            <a href="https://github.com/aztza?tab=stars">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="greet"><h1>Hi,<br>My Name Is <b>Thant Zin Aung</b><br>Web Developer</h1></div>
+    </section>   
+</body>
+</html>
